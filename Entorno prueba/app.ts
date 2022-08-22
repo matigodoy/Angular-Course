@@ -1,10 +1,17 @@
-let mipromesa = new Promise( function(resolve:any, reject:any) {
-    //resolve();
-    reject();
-});
+class Persona {
+    nombre: string;
+    apellido: string;
+    edad: number;
+    km: number;
 
-mipromesa.then(function() {
-    console.log('la operación de la promesa finalizó con éxito');
-}, function() {
-    console.log('la operación de la promesa finalizó con error');
-});
+    caminar() {
+        console.log('estoy caminando' + this.km);
+    }
+
+    constructor(howManyKm: number){
+        this.km = howManyKm;
+    }
+}
+
+let objectPerson = new Persona(33);
+objectPerson.caminar();

@@ -1,9 +1,11 @@
-var mipromesa = new Promise(function (resolve, reject) {
-    //resolve();
-    reject();
-});
-mipromesa.then(function () {
-    console.log('la operación de la promesa finalizó con éxito');
-}, function () {
-    console.log('la operación de la promesa finalizó con error');
-});
+var Persona = /** @class */ (function () {
+    function Persona(howManyKm) {
+        this.km = howManyKm;
+    }
+    Persona.prototype.caminar = function () {
+        console.log('estoy caminando' + this.km);
+    };
+    return Persona;
+}());
+var objectPerson = new Persona(33);
+objectPerson.caminar();
