@@ -1,17 +1,4 @@
-class Persona {
-    nombre: string;
-    apellido: string;
-    edad: number;
-    km: number;
+import { Persona } from "./Person"
 
-    caminar() {
-        console.log('estoy caminando' + this.km);
-    }
-
-    constructor(howManyKm: number){
-        this.km = howManyKm;
-    }
-}
-
-let objectPerson = new Persona(33);
-objectPerson.caminar();
+var objecto = new Persona(33);
+objecto.caminar();
