@@ -1,6 +1,10 @@
-var sumarNumeros = (p1: number, p2:number) => {
-    return p1 + p2;
-};
+let mipromesa = new Promise( function(resolve:any, reject:any) {
+    //resolve();
+    reject();
+});
 
-let resultado = sumarNumeros(2,3); 
-console.log('resultado ' + resultado);
+mipromesa.then(function() {
+    console.log('la operación de la promesa finalizó con éxito');
+}, function() {
+    console.log('la operación de la promesa finalizó con error');
+});

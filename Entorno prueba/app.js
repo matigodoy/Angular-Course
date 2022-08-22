@@ -1,5 +1,9 @@
-var sumarNumeros = function (p1, p2) {
-    return p1 + p2;
-};
-var resultado = sumarNumeros(2, 3);
-console.log('resultado ' + resultado);
+var mipromesa = new Promise(function (resolve, reject) {
+    //resolve();
+    reject();
+});
+mipromesa.then(function () {
+    console.log('la operación de la promesa finalizó con éxito');
+}, function () {
+    console.log('la operación de la promesa finalizó con error');
+});
